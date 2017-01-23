@@ -1,6 +1,13 @@
 h1, h2, h3, p {
     //font-family: 'Bitter', serif;
-    font-family: 'Roboto', sans-serif;
+    //font-family: 'Roboto', sans-serif;
+    font-family: "Roboto Slab","Helvetica Neue",Helvetica,Arial,sans-serif;;
+}
+
+.prova{
+    font-family: "Roboto Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-style: italic;
+    font-size: 30px;
 }
 
 header {
