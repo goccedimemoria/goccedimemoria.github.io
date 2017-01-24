@@ -108,3 +108,7 @@ h6 {
   font-weight: 700;
 }
 */
+
+#arg01, #arg02, #arg03, #arg04, #arg05, #arg06 {
+    cursor: pointer;
+}
