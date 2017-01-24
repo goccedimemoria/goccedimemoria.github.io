@@ -11,37 +11,37 @@ app = {
     
     arg01: function() {
         $('#arg01').on('click', function() {
-            window.location('/antisemitismo_nella_storia/');
+            window.location = '/antisemitismo_nella_storia/';
         });
     },
     
     arg02: function() {
         $('#arg02').on('click', function() {
-            window.location('/ripresa_dell_antisemitismo_nel_xx_secolo/');
+            window.location = '/ripresa_dell_antisemitismo_nel_xx_secolo/';
         });
     },
     
     arg03: function() {
         $('#arg04').on('click', function() {
-            window.location('/inizio_delle_politiche_discriminatorie/');
+            window.location = '/inizio_delle_politiche_discriminatorie/';
         });
     },
     
     arg04: function() {
         $('#arg04').on('click', function() {
-            window.location('/inizio_della_fine/');
+            window.location = '/inizio_della_fine/';
         });
     },
     
     arg05: function() {
         $('#arg05').on('click', function() {
-            window.location('/geografia_dello_sterminio/');
+            window.location = '/geografia_dello_sterminio/';
         });
     },
     
     arg06: function() {
         $('#arg06').on('click', function() {
-            window.location('/approccio_critico_alla_shoah/');
+            window.location = '/approccio_critico_alla_shoah/';
         });
     }
     
