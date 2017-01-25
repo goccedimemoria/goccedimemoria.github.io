@@ -2,10 +2,15 @@ h1, h2, h3 {
     font-family: "Roboto Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
+.titolo {
+    margin-top: -30px;
+}
 .subtitle{
     font-family: "Roboto Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
     font-style: italic;
     font-size: 30px;
+    -webkit-text-stroke: 1.5px black;
+    color: green;
 }
 
 @media screen and (max-width: 667px) and (min-width: 375px) {
@@ -21,7 +26,7 @@ h1, h2, h3 {
 }
 
 header {
-    background-image: url(../img/header_1.jpg);
+    background-image: url(../img/img_4141.jpg);
     background-position: top center;
     background-repeat: no-repeat;
     background-size: cover;
