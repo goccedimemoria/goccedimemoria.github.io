@@ -1,0 +1,12 @@
+.slides {
+    display: none;
+    width: 100%;
+}
+
+.slideshow {
+    width: 100%;
+}
+
+.w3-left, .w3-right, .w3-badge {
+    cursor: pointer;
+}
