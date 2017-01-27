@@ -22,7 +22,7 @@ app = {
     },
     
     arg03: function() {
-        $('#arg04').on('click', function() {
+        $('#arg03').on('click', function() {
             window.location = '/inizio_delle_politiche_discriminatorie/';
         });
     },
