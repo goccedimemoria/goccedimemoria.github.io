@@ -14,7 +14,7 @@ h1, h2, h3 {
 }
 
 header {
-    background-image: url(../img/IMG_4144.jpg);
+    background-image: url(../img/header.jpg);
     background-position: top center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -108,10 +108,21 @@ h6 {
     
 }
 
+.bottone{
+    position: absolute;
+    top: 68%;
+    left: 42%;
+    
+}
+em {
+    background-image: url(../img/bck2.jpg);
+    background-size: cover;
+}
+
 /*
  * per versione mobile
 */
-@media only screen and (max-width: 700px) /*and (min-width: 150px)*/ {
+@media only screen and (max-width: 700px) {
     .subtitle {
         font-size: 20px;
     }
