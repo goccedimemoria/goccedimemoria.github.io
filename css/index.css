@@ -18,19 +18,6 @@ h1, h2, h3 {
         font-size: 20px;
     }
 }
-.cohen{
-    background-image: url(../img/background.png);
-    background-position: top center;
-    width: 100%;
-    height: 800px;
-}
-
-.cohen2{
-    background-image: url(../img/mappa.png);
-    background-position: top center;
-    width: 100%;
-    height: 800px;
-}
 
 header {
     background-image: url(../img/background.png);
@@ -110,4 +97,20 @@ h6 {
 
 #arg01, #arg02, #arg03, #arg04, #arg05, #arg06 {
     cursor: pointer;
+}
+
+.mappa{
+    width: 60%;
+    float: left;
+}
+
+.immagine{
+    height: 500px;
+    width: 100%;
+    background-image: url(../img/IMG_4144.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
 }
