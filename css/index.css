@@ -20,7 +20,7 @@ h1, h2, h3 {
 }
 
 header {
-    background-image: url(../img/background.png);
+    background-image: url(../img/IMG_4144.jpg);
     background-position: top center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -107,7 +107,6 @@ h6 {
 .immagine{
     height: 500px;
     width: 100%;
-    background-image: url(../img/IMG_4144.jpg);
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center;
