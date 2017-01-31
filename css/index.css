@@ -20,7 +20,7 @@ header {
     background-position: top center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
+    /* background-attachment: fixed; se lasciato lagga */
     width: 100%;
     height: 100vh;
 }
