@@ -1,12 +1,14 @@
 h1, h2, h3 {
-    font-family: "Roboto Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
+    
+    font-family: 'Raleway', sans-serif;
 }
 
 .titolo {
     margin-top: -150px;
+    font-family: 'Raleway', sans-serif;
 }
 .subtitle{
-    font-family: "Roboto Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-style: italic;
     font-size: 20px;
     
@@ -24,6 +26,7 @@ header {
 
 .introduzione{
     font-size: 17px;
+    font-family: 'Raleway', sans-serif;
 }
 
 .card-griglia {
@@ -59,6 +62,7 @@ p {
 }
 p.large {
   font-size: 16px;
+  font-family: 'Raleway', sans-serif;
 }
 a,
 a:hover,
@@ -94,8 +98,9 @@ h6 {
 }
 
 .mappa{
-    width: 60%;
-    float: left;
+    width: 80%;
+    float:none;
+    
 }
 
 .immagine{
@@ -125,6 +130,7 @@ em {
 @media only screen and (max-width: 700px) {
     .subtitle {
         font-size: 20px;
+        font-family: 'Raleway', sans-serif;
     }
     .mappa{
         width: 100%;
