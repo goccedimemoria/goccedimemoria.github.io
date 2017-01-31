@@ -11,7 +11,7 @@ app = {
     
     arg01: function() {
         $('#arg01').on('click', function() {
-            window.location = '/antisemitismo_nella_storia/';
+            window.location = '/antisemitismo_nella_storia/index.html';
         });
     },
     
