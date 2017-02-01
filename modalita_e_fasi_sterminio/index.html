@@ -70,13 +70,13 @@
               <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding" title="close menu">
                 <i class="fa fa-remove"></i>
               </a>
-            <a href="../index.html" class="w3-text-grey w3-hover-black" onclick="closeNav()">ARGOMENTI</a>
-            <a href="#arrivo" class="w3-text-grey w3-hover-black" onclick="closeNav()">L'arrivo nei lager</a>
-            <a href="#trattamento_estremo" class="w3-text-grey w3-hover-black" onclick="closeNav()">Trattamento estremo</a>
-            <a href="#paura_della_selezione" class="w3-text-grey w3-hover-black" onclick="closeNav()">Paura della selezione</a>
-            <a href="#sinfonia_della_morte" class="w3-text-grey w3-hover-black" onclick="closeNav()">Sinfonia della morte</a>
-            <a href="#colpevole_indifferenza" class="w3-text-grey w3-hover-black" onclick="closeNav()">Colpevole indifferenza</a>
-            <a href="#fonti" class="w3-text-grey w3-hover-black" onclick="closeNav()">Fonti</a>
+            <a href="../index.html" class="w3-text-grey w3-hover-black" onclick="w3_closeNav()">ARGOMENTI</a>
+            <a href="#arrivo" class="w3-text-grey w3-hover-black" onclick="w3_closeNav()">L'arrivo nei lager</a>
+            <a href="#trattamento_estremo" class="w3-text-grey w3-hover-black" onclick="w3_closeNav()">Trattamento estremo</a>
+            <a href="#paura_della_selezione" class="w3-text-grey w3-hover-black" onclick="w3_closeNav()">Paura della selezione</a>
+            <a href="#sinfonia_della_morte" class="w3-text-grey w3-hover-black" onclick="w3_closeNav()">Sinfonia della morte</a>
+            <a href="#colpevole_indifferenza" class="w3-text-grey w3-hover-black" onclick="w3_closeNav()">Colpevole indifferenza</a>
+            <a href="#fonti" class="w3-text-grey w3-hover-black" onclick="w3_closeNav()">Fonti</a>
         </nav> 
          <!--
         <div id="navDemo" class="w3-hide w3-hide-large w3-hide-medium">
@@ -197,14 +197,17 @@
             </div> -->
         </div>
         <script>
-            function openNav() {
-    document.getElementById("mySidenav").style.width = "60%";
+// Script to open and close sidenav
+function w3_open() {
     document.getElementById("mySidenav").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
 }
-
-function closeNav() {
+ 
+function w3_close() {
     document.getElementById("mySidenav").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
 }
-        </script>
+</script>
+
     </body>
 </html>
