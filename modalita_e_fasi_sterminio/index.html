@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-    <title>Antisemitismo nella storia</title>
+    <title>Modalità e fasi di sterminio</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="../css/w3.css">
@@ -31,105 +31,164 @@
     <body>
 
         <!-- Icon Bar (Sidenav - hidden on small screens) -->
-        <nav class="w3-sidenav w3-center w3-small w3-hide-small">
-            <!-- Avatar image in top left corner -->
-
+        <nav class="w3-sidenav w3-center w3-small w3-hide-small" id='myNavbar'>
+            <div class="w3-hide-medium w3-hide-large w3-opennav w3-right">
+                <span class="w3-opennav w3-top w3-padding-top w3-xxlarge w3-margin-right w3-text-grey w3-hover-text-black" style="width:auto;right:0;" onclick="openNav()"><i class="fa fa-bars"></i></span>
+            </div>
             <a class="w3-padding-large w3-black w3-invert" href="../index.html/">
                 <i class="fa fa-arrow-left w3-xxlarge"></i>
                 <p>ARGOMENTI</p>
             </a>
-            <a class="w3-padding-large w3-hover-black" href="#storia-antica">
+            <a class="w3-padding-large w3-hover-black" href="#arrivo">
                 <!-- <i class="fa fa-user w3-xxlarge"></i> -->
-                <p>L'ANTISE-<br>MITISMO NELLA STORIA ANTICA</p>
+                <p>L'ARRIVO</p>
             </a>
-            <a class="w3-padding-large w3-hover-black" href="#creazione-stereotipo">
+            <a class="w3-padding-large w3-hover-black" href="#trattamento_estremo">
                 <!-- <i class="fa fa-eye w3-xxlarge"></i> -->
-                <p>LA CREAZIONE DI UNO STEREOTIPO</p>
+                <p>TRATTAMENTO ESTREMO</p>
             </a>
-            <a class="w3-padding-large w3-hover-black" href="#photos">
+            <a class="w3-padding-large w3-hover-black" href="#paura_della_selezione">
                 <!-- <i class="fa fa-eye w3-xxlarge"></i> -->
-                <p>FONTI</p>
+                <p>PAURA DELLA SELEZIONE</p>
             </a>
-            <a class="w3-padding-large w3-hover-black" href="#about">
+            <a class="w3-padding-large w3-hover-black" href="#sinfonia_della_morte">
                 <!-- <i class="fa fa-user w3-xxlarge"></i> -->
-                <p>ABOUT</p>
+                <p>SINFONIA DELLA MORTE</p>
             </a>
-            <a class="w3-padding-large w3-hover-black" href="#photos">
+            <a class="w3-padding-large w3-hover-black" href="#colpevole_indifferenza">
                 <!-- <i class="fa fa-eye w3-xxlarge"></i> -->
-                <p>FOTO</p>
+                <p>COLPEVOLE INDIFFERENZA</p>
             </a>
-            <a class="w3-padding-large w3-hover-black" href="#photos">
+            <a class="w3-padding-large w3-hover-black" href="#fonti">
                 <!-- <i class="fa fa-eye w3-xxlarge"></i> -->
                 <p>FONTI</p>
             </a>
         </nav>
 
-        <!-- Navbar on small screens (Hidden on medium and large screens) -->
-        <div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
-            <ul class="w3-navbar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
-                <li class="w3-left" style="width:25% !important"><a href="#">HOME</a></li>
-                <li class="w3-left" style="width:25% !important"><a href="#about">ARG-01</a></li>
-                <li class="w3-left" style="width:25% !important"><a href="#photos">ARG-02</a></li>
-                <li class="w3-left" style="width:25% !important"><a href="#photos">FONTI</a></li>
-                <li class="w3-left" style="width:25% !important"><a href="#about">PARAGRAFO</a></li>
-                <li class="w3-left" style="width:25% !important"><a href="#photos">FOTO</a></li>
-                <li class="w3-left" style="width:25% !important"><a href="#photos">FONTI</a></li>
+        <nav class="w3-sidenav w3-collapse w3-white w3-animate-left" style="z-index:3;width:300px;" id="mySidenav"><br>
+            <div class="w3-container">
+              <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding" title="close menu">
+                <i class="fa fa-remove"></i>
+              </a>
+            <a href="../index.html" class="w3-text-grey w3-hover-black" onclick="closeNav()">ARGOMENTI</a>
+            <a href="#arrivo" class="w3-text-grey w3-hover-black" onclick="closeNav()">L'arrivo nei lager</a>
+            <a href="#trattamento_estremo" class="w3-text-grey w3-hover-black" onclick="closeNav()">Trattamento estremo</a>
+            <a href="#paura_della_selezione" class="w3-text-grey w3-hover-black" onclick="closeNav()">Paura della selezione</a>
+            <a href="#sinfonia_della_morte" class="w3-text-grey w3-hover-black" onclick="closeNav()">Sinfonia della morte</a>
+            <a href="#colpevole_indifferenza" class="w3-text-grey w3-hover-black" onclick="closeNav()">Colpevole indifferenza</a>
+            <a href="#fonti" class="w3-text-grey w3-hover-black" onclick="closeNav()">Fonti</a>
+        </nav> 
+         <!--
+        <div id="navDemo" class="w3-hide w3-hide-large w3-hide-medium">
+            <ul class="w3-navbar w3-left-align w3-white">
+                <li><a href="#about" onclick="toggleFunction()">ABOUT</a></li>
+                <li><a href="#portfolio" onclick="toggleFunction()">PORTFOLIO</a></li>
+                <li><a href="#contact" onclick="toggleFunction()">CONTACT</a></li>
+                <li><a href="#">SEARCH</a></li>
             </ul>
-        </div>
+        </div>-->
 
-        <!-- ARGOMENTO 01 -->
+        <!-- ARGOMENTO 04 -->
 
         <div class="w3-padding-large" id="main" style="border-left: 1px solid lightgrey;">
             <!-- Header/Home -->
             <header class="w3-container w3-padding-32 w3-center" id="home">
-                <h1 class="w3-jumbo"><span class="w3-hide-small">Antisemitismo</span> nella storia</h1>
+                <h1 class="w3-jumbo">Modalità e fasi di sterminio</h1>
                 <div class="w3-content w3-justify w3-text-grey">
                     <p class="w3-center" >Affrontando il grande tema della Shoah la prima, inevitabile, domanda riconduce alle motivazioni storiche dell'antisemitismo; gli ebrei, nel corso dei secoli e delle varie epoche, furono spesso oggetto e bersaglio di pregiudizi e di discriminazioni: analizziamo, di seguito, le origini antiche del diffuso sentimento antisemita.</p>
                 </div>
             </header>
 
             <!-- SOTTOARGOMENTO 01-->
-            <div class="w3-content w3-justify w3-text-grey w3-padding-16" id="storia-antica">
-                <h2>- L’ANTISEMITISMO NELLA STORIA ANTICA</h2>
+            <div class="w3-content w3-justify w3-text-grey w3-padding-16" id="arrivo">
+                <h2 class="w3-center"> L’ARRIVO NEL LAGER</h2>
                 <hr style="width:100%">
-                <p>Il primo sentimento antisemita risale al 1000 a.C. dopo la liberazione degli Ebrei dalla schiavitù egiziana. “sembra abbastanza probabile che gli egizi abbiano considerato insultante l’annuale celebrazione ebraica della loro liberazione (Pesach) e della disfatta dell’esercito Faraonico”1, gli Ebrei infatti divulgarono nel mondo antico una loro versione dell’accaduto facendo trapelare un’immagine negativa della popolazione ebraica presso i centri di potere dell’antico Egitto.
-                    Non facile da definire il rapporto tra i giudei e il mondo ellenistico-romano. E’ da rilevare che la presenza ebraica nel mondo ellenistico venne considerata utile e leale fino al momento dell’espansione di Roma nei regni ellenistici, II sec.a.C., quando si manifestarono scontri politico-sociali e culturali-religiosi tra giudei e romani. In realtà i Romani furono sempre abbastanza tolleranti nei confronti dei culti religiosi delle popolazioni sottomesse, ma non mancarono gli attriti tra le due componenti sociali e religiose che sfociarono nelle sanguinise guerre  giudaiche del  66 - 73 d.C.  che, nate dopo l’occupazione romana della Giudea,  causarono numerose morti tra gli ebrei ribelli.  L’idea teocratica degli Ebrei per cui politica e religione coincidevano e  l’attesa di un messia come re degli uomini non poteva non infastidire il potere politico romano che represse duramente ogni tentativo di rivolta giudaico 2. “Lo scontro che oppose Roma e Gerusalemme, secondo le stime provocò oltre un milione e centomila morti”3, la guerra inoltre provocò la distruzione del tempio di Gerusalemme, 70 d.C. dando così inizio alla diaspora ebraica, dispersione degli Ebrei in tutto il mondo.
+                <p><i>“Siamo arrivati ad Auschwitz, questo camino grande si pensava fossero fabbriche, ci siamo dette qua ci sarà da mangiare.” Questo è stato il pensiero di molti deportati tra cui Maria Komel che, ignara del vero funzionamento di quel camino, scendeva dal treno bestiame. 
+                        “Uno di queste SS sapeva il serbo-croato e ci ha domandato a che religione appartenevamo e abbiamo risposto che appartenevamo alla religione cattolica. Ci ha risposto “Siete fortunate perché vedete quel fuoco? Se foste state ebree questa notte sareste andate dritte lì.”(2) 
+                        Infatti  all'interno dei lager non erano internati solo gli ebrei, i quali rimanevano comunque i più perseguitati, ma anche testimoni di Geova, omosessuali, criminali comuni, asociali e zingari.(3) Ognuno di essi veniva contraddistinto da un simbolo cucito sulla casacca, come si può notare nella foto 1.(4) 
+                        Inoltre i detenuti arrivati con i primi convogli dovevano dormire sul cemento o nei paglierecci.(5) 
+                        Insomma, era un inferno ancora prima di metterci piede.</i>
                 </p>
-                <div class="w3-padding-16 w3-content" id="photos">
-                    <img src="img/Nicolas_Poussin.jpg" style="width:100%">
+                <div class="w3-row-padding" style="margin:0 -16px">
+                    <img src="img/arrivo.jpg" style="width:100%">
                 </div>
-
-                <!-- FONTI      NON QUI MA TUTTE IN FONDO
-                <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
-                    <h2>FONTI</h2>
-                    <hr style="width:200px">
-
-                    <div class="w3-section">
-                        <p><i class="fa fa-map-marker fa-fw  w3-xxlarge w3-margin-right"></i> Maurizio Ghiretti, storia dell’antigiudaismo e dell’antisemitismo</p>
-                        <p><i class="fa fa-phone fa-fw  w3-xxlarge w3-margin-right"></i>  www.biblio.org/documenti-tabella</p>
-                        <p><i class="fa fa-envelope fa-fw  w3-xxlarge w3-margin-right"> </i> L’antisemitismo cristiano ha origini pagane, Paolo Mieli, Corriere della Sera, 04 ottobre 2009</p>
-                    </div><br>
-                </div> -->
             </div>
 
             <!-- SOTTOARGOMENTO 02 -->
-            <div class="w3-content w3-justify w3-text-grey w3-padding-32" id="creazione-stereotipo">
-                <h2>- LA CREAZIONE DI UNO STEREOTIPO E IL PARTICOLARISMO EBRAICO</h2>
+            <div class="w3-content w3-justify w3-text-grey w3-padding-32" id="un_trattamento_estremo">
+                <h2 class="w3-center"> UN TRATTAMENTO ESTREMO</h2>
                 <hr style="width:100%">
-                <p>Gli stereotipi negativi sulla popolazione ebraica non sono inediti. Molti scrittori di età ellenistica avevano accusato i giudei di essere xenofobi, asociali, barbari e sanguinari. Anche molti autori latini contestarono le usanze ebraiche della circoncisione, del riposo sabbatico, del rifiuto di certi cibi e di certe usanze pubbliche del mondo romano. Il pregiudizio nei confronti di questo popolo si inserisce, verosimilmente, nel particolarismo che lo distingue da tutte le altre tradizioni: gli ebrei hanno orrore dell’idolatria e del politeismo, non partecipano ai culti pagani delle popolazioni con cui si trovano a convivere, rifiutano i loro cibi e il loro vino e non li invitano alle loro feste religiose. Da qui l’accusa di misantropia, xenofobia, esclusivismo, arroganza. Gli ebrei, infine, hanno un rapporto esclusivo con il loro Dio, che non condividono con nessuno, e che non rappresentano con immagini; inoltre non riconoscendo le divinità dello Stato e delle città in cui vivono entrano in continuo conflitto con il diritto di cittadinanza. Va detto che anche gli ebrei nutrirono pregiudizi nei confronti degli altri popoli, accusandoli spesso di unioni sessuali promiscue e di scarso rigore etico nel rispetto delle leggi, che erano invece fondamentali nel loro sistema di vita.
-                    In epoca romana, con Augusto e Tiberio, poterono godere della religio licita, ovvero di una legislazione che ne tutelava la libertà di professare il culto, ma quando l’imperatore Caligola affigge la sua immagine, divinizzandola, nelle sinagoghe gli ebrei avvertono la profanazione del proprioo credo e iniziano quella serie di rivolte che porteranno alla rottura con il mondo romano e alla distruzione del tempio nel 70 d.C da parte di Tito e alla già citata diaspora1.
+                <p>I deportati nei lager erano sottoposti a condizioni estreme: le casacche erano troppo sottili per proteggere dal freddo, la biancheria non poteva essere lavata dai prigionieri e veniva cambiata quasi ogni mese. Questa mancanza d'igiene comportava la diffusione di malattie come il tifo e la scabbia. Molti malati non venivano nemmeno accettati all'ospedale per il troppo affollamento. I medici delle SS conducevano quindi selezioni tra i malati e gli internati nei blocchi. Di questi, i più deboli venivano portati nelle camere a gas oppure venivano soppressi.
+                    Un altro mezzo di sterminio nei lager era soprattutto il lavoro. I detenuti erano utilizzati per il mantenimento e l'ampliamento del campo. Costruivano strade, baracche, canali di prosciugamento, il tutto sotto le armi dei soldati che non tardavano a complicare la loro situazione.(6) Inoltre il cibo era pochissimo ed era distribuito tra tutti i detenuti. La fame quindi fu uno degli altri motivi per cui morirono in molti. Altri invece furono trovati in condizioni pietose, divenuti quasi cadaveri con un peso tra i 23 e i 35 Kg.(7)
 
                 </p>
-                <div class="w3-padding-16 w3-content" id="photos">
-                    <img src="img/la_creazione.jpg" style="width:100%">
+                <div class="w3-row-padding" style="margin:0 -16px">
+                    <div class="w3-col m4 l4 s4 w3-padding-tiny ">
+                        <img src="img/cibo.jpg" style="width:100%; height:200px">
+                    </div>
+                    <div class="w3-col m4 l4 s4 w3-padding-tiny ">
+                        <img src="img/casacche.jpg"  style="width:100%; height:200px">
+                    </div>
+                    <div class="w3-col m4 l4 s4 w3-padding-tiny ">
+                        <img src="img/lavoro.jpg" style="width:100%; height:200px">
+                    </div>
                 </div>
             </div>
 
-            <!-- FONTI      NON QUI MA TUTTE IN FONDO
-            <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
-                <h2>FONTI</h2>
-                <hr style="width:200px">
+            <!SOTTOARGOMENTO 03>
+            <div class="w3-content w3-justify w3-text-grey w3-padding-32" id="paura_della_selezione">
+                <h2 class="w3-center"> PAURA DELLA SELEZIONE</h2>
+                <hr style="width:100%">
+                <p><i>
+                        Nei lager venivano deportati persino i bambini,  che fossero grandi o piccoli. La maggior parte di loro veniva soppressa immediatamente mentre gli altri venivano selezionati, come di consuetudine, e mandati a lavorare. Non gli veniva dato alcun privilegio rispetto agli ebrei adulti, il che rendeva loro la vita molto più dura. È comunque anche grazie a loro se possiamo capire la situazione che si viveva all’interno di quelle terribili baracche.
+                        “Qui risuonano grida e strilli” scrive un bambino nella poesia “A Terezin”.(8) Egli racconta in questa poesia la sensazione di terrore che prova un bambino appena messo piede in un campo di concentramento, del sudiciume, della scomodità dei letti e della scarsa igiene. Tutte emozioni che si provavano in questi orrendi luoghi. Inoltre i bambini riuscivano in qualche modo a fare dei disegni, come si può vedere nelle foto 4 e 5, catturando in una “loro” immagine ciò che vedevano.
+                    </i>
+                </p>
+                <div class="w3-row-padding" style="margin:0 -16px">
+                    <div class="w3-col m4 l4 s4 w3-padding-tiny">
+                        <img src="img/cibo.jpg" style="width:100%; height:200px">
+                    </div>
+                    <div class="w3-col m4 l4 s4 w3-padding-tiny">
+                        <img src="img/casacche.jpg"  style="width:100%; height:200px">
+                    </div>
+                    <div class="w3-col m4 l4 s4 w3-padding-tiny">
+                        <img src="img/lavoro.jpg" style="width:100%; height:200px">
+                    </div>
+                </div>
+            </div>
 
+            <!SOTTOARGOMENTO 04>
+            <div class="w3-content w3-justify w3-text-grey w3-padding-32" id="creazione-stereotipo">
+                <h2 class="w3-center">LA SINFONIA DELLA MORTE</h2>
+                <hr style="width:100%">
+                <p><i>Nei campi di concentramento la musica divenne il mezzo per trasmettere l’orrore e l’annullamento della dignità dei detenuti. Venivano spesso organizzate bande (foto 2), formate dai prigionieri che suonassero, durante il giorno. Queste bande venivano organizzate soprattutto durante le esecuzioni (foto 3) nelle quali il condannato veniva accompagnato col “Tango della morte”.
+                        I brani erano composti dagli ebrei su ordine dei comandanti. I canti per sottolineare i vari momenti della vita nel campo e anche ninne nanne, che venivano cantate ai bambini condotti alle camere a gas. Nella loro drammaticità questi sentimenti portarono alla luce numerosi capolavori musicali, che vennero composti proprio da quei musicisti.(9) Una di queste canzoni fu “Gam Gam”, una canzone che riportava il quarto versetto del Salmo 23 e che veniva cantata dagli ebrei. Essa divenne uno degli inni più toccanti dell'Olocausto, cantato dalle scolaresche nel Giorno della Memoria per ricordare il milione e mezzo di bambini uccisi dai nazisti.(10)
+                    </i>
+                </p>
+                <div class="w3-row-padding" style="margin:0 -16px">
+                    <div class="w3-half">
+                        <img src="img/musica.jpg" style="width:100%;height:372px">
+                    </div>
+                    <div class="w3-half">
+                        <img src="img/Sinfoniac.jpg"  style="width:100%;height:372px">
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- SOTTOARGOMENTO 05-->
+            <div class="w3-content w3-justify w3-text-grey w3-padding-32" id="creazione-stereotipo">
+                <h2 class="w3-center">COLPEVOLE INDIFFERENZA</h2>
+                <hr style="width:100%">
+                <p><i> “Scriviamo nella pietra la parola INDIFFERENZA, perché l'indifferenza è colpevolissima”. Queste le parole lasciate al Consiglio Regionale Ligure pochi anni fa nella Giornata della Memoria da Liliana Segre, la quale condanna l'indifferenza vedendola peggio della violenza. Non a caso, come scritto nell'introduzione, dei lager se ne venne a conoscenza solo dopo la fine della guerra, “perché se qualcosa non ti tocca personalmente, “beh ci penserà qualcun altro””.(11) L'indifferenza della gente, quindi, ha permesso Auschwitz, ha permesso Terezin, ha permesso la Shoah
+                        Ha permesso il periodo più cupo dell'intera storia dell'umanità.
+
+                    </i>
+
+                </p>
+            </div>
+
+            <!--
                 <div class="w3-section">
                     <p><i class="fa fa-map-marker fa-fw  w3-xxlarge w3-margin-right"></i> Maurizio Ghiretti, storia dell’antigiudaismo e dell’antisemitismo</p>
                     <p><i class="fa fa-phone fa-fw  w3-xxlarge w3-margin-right"></i>  www.biblio.org/documenti-tabella</p>
@@ -137,5 +196,15 @@
                 </div><br>
             </div> -->
         </div>
+        <script>
+            function openNav() {
+    document.getElementById("mySidenav").style.width = "60%";
+    document.getElementById("mySidenav").style.display = "block";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.display = "none";
+}
+        </script>
     </body>
 </html>
