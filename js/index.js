@@ -17,31 +17,31 @@ app = {
     
     arg02: function() {
         $('#arg02').on('click', function() {
-            window.location = '/ripresa_dell_antisemitismo_nel_xx_secolo/';
+            window.location = '/legislazione_antisemita_germania_italia/index.html';
         });
     },
     
     arg03: function() {
         $('#arg03').on('click', function() {
-            window.location = '/inizio_delle_politiche_discriminatorie/';
+            window.location = '/geografia_dello_sterminio/index.html';
         });
     },
     
     arg04: function() {
         $('#arg04').on('click', function() {
-            window.location = '/inizio_della_fine/';
+            window.location = '/vita_nei_lager/index.html';
         });
     },
     
     arg05: function() {
         $('#arg05').on('click', function() {
-            window.location = '/geografia_dello_sterminio/';
+            window.location = '/testimonianze/index.html';
         });
     },
     
     arg06: function() {
         $('#arg06').on('click', function() {
-            window.location = '/approccio_critico_alla_shoah/';
+            window.location = '/approccio_critico_alla_shoah/index.html';
         });
     }
     
