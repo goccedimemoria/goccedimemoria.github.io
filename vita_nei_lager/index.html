@@ -31,11 +31,11 @@
     <body>
 
         <!-- Icon Bar (Sidenav - hidden on small screens) -->
-        <nav class="w3-sidenav w3-center w3-small w3-hide-small" id='myNavbar'>
+        <nav class="w3-sidenav w3-center w3-small w3-hide-small" >
             <div class="w3-hide-medium w3-hide-large w3-opennav w3-right">
                 <span class="w3-opennav w3-top w3-padding-top w3-xxlarge w3-margin-right w3-text-grey w3-hover-text-black" style="width:auto;right:0;" onclick="openNav()"><i class="fa fa-bars"></i></span>
             </div>
-            <a class="w3-padding-large w3-black w3-invert" href="../index.html/">
+            <a class="w3-padding-large w3-black w3-invert" href="/#argomenti">
                 <i class="fa fa-arrow-left w3-xxlarge"></i>
                 <p>ARGOMENTI</p>
             </a>
@@ -65,28 +65,18 @@
             </a>
         </nav>
 
-        <nav class="w3-sidenav w3-collapse w3-white w3-animate-left" style="z-index:3;width:300px;" id="mySidenav"><br>
-            <div class="w3-container">
-              <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding" title="close menu">
-                <i class="fa fa-remove"></i>
-              </a>
-            <a href="../index.html" class="w3-text-grey w3-hover-black" onclick="w3_closeNav()">ARGOMENTI</a>
-            <a href="#arrivo" class="w3-text-grey w3-hover-black" onclick="w3_closeNav()">L'arrivo nei lager</a>
-            <a href="#trattamento_estremo" class="w3-text-grey w3-hover-black" onclick="w3_closeNav()">Trattamento estremo</a>
-            <a href="#paura_della_selezione" class="w3-text-grey w3-hover-black" onclick="w3_closeNav()">Paura della selezione</a>
-            <a href="#sinfonia_della_morte" class="w3-text-grey w3-hover-black" onclick="w3_closeNav()">Sinfonia della morte</a>
-            <a href="#colpevole_indifferenza" class="w3-text-grey w3-hover-black" onclick="w3_closeNav()">Colpevole indifferenza</a>
-            <a href="#fonti" class="w3-text-grey w3-hover-black" onclick="w3_closeNav()">Fonti</a>
-        </nav> 
-         <!--
-        <div id="navDemo" class="w3-hide w3-hide-large w3-hide-medium">
-            <ul class="w3-navbar w3-left-align w3-white">
-                <li><a href="#about" onclick="toggleFunction()">ABOUT</a></li>
-                <li><a href="#portfolio" onclick="toggleFunction()">PORTFOLIO</a></li>
-                <li><a href="#contact" onclick="toggleFunction()">CONTACT</a></li>
-                <li><a href="#">SEARCH</a></li>
+        <!-- Navbar on small screens (Hidden on medium and large screens) -->
+        <div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+            <ul class="w3-navbar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+                <li class="w3-left" style="width:25% !important"><a href="/#argomenti">HOME</a></li>
+                <li class="w3-left" style="width:25% !important"><a href="#arrivo">L'ARRIVO</a></li>
+                <li class="w3-left" style="width:25% !important"><a href="#trattamento_estremo">TRATTAMENTO ESTREMO</a></li>
+                <li class="w3-left" style="width:25% !important"><a href="#paura_della_selezione">PAURA DELLA SELEZIONE</a></li>
+                <li class="w3-left" style="width:25% !important"><a href="#sinfonia_della_morte">SINFONIA DELLA MORTE</a></li>
+                <li class="w3-left" style="width:25% !important"><a href="#colpevole_indifferenza">COLPEVOLE INDIFFERENZA</a></li>
+                <li class="w3-left" style="width:25% !important"><a href="#fonti">FONTI</a></li>
             </ul>
-        </div>-->
+        </div>
 
         <!-- ARGOMENTO 04 -->
 
@@ -135,7 +125,7 @@
                 </div>
             </div>
 
-            <!SOTTOARGOMENTO 03>
+            <!--SOTTOARGOMENTO 03 -->
             <div class="w3-content w3-justify w3-text-grey w3-padding-32" id="paura_della_selezione">
                 <h2 class="w3-center"> PAURA DELLA SELEZIONE</h2>
                 <hr style="width:100%">
@@ -157,7 +147,7 @@
                 </div>
             </div>
 
-            <!SOTTOARGOMENTO 04>
+            <!-- SOTTOARGOMENTO 04 -->
             <div class="w3-content w3-justify w3-text-grey w3-padding-32" id="creazione-stereotipo">
                 <h2 class="w3-center">LA SINFONIA DELLA MORTE</h2>
                 <hr style="width:100%">
@@ -196,18 +186,6 @@
                 </div><br>
             </div> -->
         </div>
-        <script>
-// Script to open and close sidenav
-function w3_open() {
-    document.getElementById("mySidenav").style.display = "block";
-    document.getElementById("myOverlay").style.display = "block";
-}
- 
-function w3_close() {
-    document.getElementById("mySidenav").style.display = "none";
-    document.getElementById("myOverlay").style.display = "none";
-}
-</script>
 
     </body>
 </html>
