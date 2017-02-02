@@ -93,11 +93,11 @@
 
             <!-- SOTTOARGOMENTO 01-->
             <div class="w3-content w3-justify w3-text-grey w3-padding-16" id="arrivo">
-                <h2 class="w3-center"> L‚ÄôARRIVO NEL LAGER</h2>
+                <h2 class="w3-center"> LíARRIVO NEL LAGER</h2>
                 <hr style="width:100%">
-                <p><i>‚ÄúSiamo arrivati ad Auschwitz, questo camino grande si pensava fossero fabbriche, ci siamo dette qua ci sar√† da mangiare.‚Äù Questo √® stato il pensiero di molti deportati tra cui Maria Komel che, ignara del vero funzionamento di quel camino, scendeva dal treno bestiame. 
-                        ‚ÄúUno di queste SS sapeva il serbo-croato e ci ha domandato a che religione appartenevamo e abbiamo risposto che appartenevamo alla religione cattolica. Ci ha risposto ‚ÄúSiete fortunate perch√© vedete quel fuoco? Se foste state ebree questa notte sareste andate dritte l√¨.‚Äù 
-                        Infatti  all'interno dei lager non erano internati solo gli ebrei, i quali rimanevano comunque i pi√π perseguitati, ma anche testimoni di Geova, omosessuali, criminali comuni, asociali e zingari. Ognuno di essi veniva contraddistinto da un simbolo cucito sulla casacca, come si pu√≤ notare nella foto 1.(4) 
+                <p><i>ìSiamo arrivati ad Auschwitz, questo camino grande si pensava fossero fabbriche, ci siamo dette qua ci sar‡ da mangiare.î Questo Ë stato il pensiero di molti deportati tra cui Maria Komel che, ignara del vero funzionamento di quel camino, scendeva dal treno bestiame. 
+                        ìUno di queste SS sapeva il serbo-croato e ci ha domandato a che religione appartenevamo e abbiamo risposto che appartenevamo alla religione cattolica. Ci ha risposto ìSiete fortunate perchÈ vedete quel fuoco? Se foste state ebree questa notte sareste andate dritte lÏ.î 
+                        Infatti  all'interno dei lager non erano internati solo gli ebrei, i quali rimanevano comunque i pi˘ perseguitati, ma anche testimoni di Geova, omosessuali, criminali comuni, asociali e zingari. Ognuno di essi veniva contraddistinto da un simbolo cucito sulla casacca, come si puÚ notare nella foto 1.(4) 
                         Inoltre i detenuti arrivati con i primi convogli dovevano dormire sul cemento o nei paglierecci.
                         Insomma, era un inferno ancora prima di metterci piede.</i>
                 </p>
@@ -113,7 +113,7 @@
                 <hr style="width:100%">
                 <p>I deportati nei lager erano sottoposti a condizioni estreme: le casacche erano troppo sottili per proteggere dal freddo, la biancheria non poteva essere lavata dai prigionieri e veniva cambiata quasi ogni mese. 
                     Questa mancanza d'igiene comportava la diffusione di malattie come il tifo e la scabbia. Molti malati non venivano nemmeno accettati all'ospedale per il troppo affollamento. 
-                    I medici delle SS conducevano quindi selezioni tra i malati e gli internati nei blocchi. Di questi, i pi√π deboli venivano portati nelle camere a gas oppure venivano soppressi.
+                    I medici delle SS conducevano quindi selezioni tra i malati e gli internati nei blocchi. Di questi, i pi˘ deboli venivano portati nelle camere a gas oppure venivano soppressi.
                     Un altro mezzo di sterminio nei lager era soprattutto il lavoro. 
                     I detenuti erano utilizzati per il mantenimento e l'ampliamento del campo. Costruivano strade, baracche, canali di prosciugamento, il tutto sotto le armi dei soldati che non tardavano a complicare la loro situazione. 
                     Inoltre il cibo era pochissimo ed era distribuito tra tutti i detenuti. La fame quindi fu uno degli altri motivi per cui morirono in molti. 
@@ -141,10 +141,10 @@
                 <p><i>
                         Nei lager venivano deportati persino i bambini,  che fossero grandi o piccoli. 
                         La maggior parte di loro veniva soppressa immediatamente mentre gli altri venivano selezionati, come di consuetudine, e mandati a lavorare. 
-                        Non gli veniva dato alcun privilegio rispetto agli ebrei adulti, il che rendeva loro la vita molto pi√π dura. √à comunque anche grazie a loro se possiamo capire la situazione che si viveva all‚Äôinterno di quelle terribili baracche.
-                        ‚ÄúQui risuonano grida e strilli‚Äù scrive un bambino nella poesia ‚ÄúA Terezin‚Äù. 
-                        Egli racconta in questa poesia la sensazione di terrore che prova un bambino appena messo piede in un campo di concentramento, del sudiciume, della scomodit√† dei letti e della scarsa igiene. 
-                        Tutte emozioni che si provavano in questi orrendi luoghi. Inoltre i bambini riuscivano in qualche modo a fare dei disegni catturando in una ‚Äúloro‚Äù immagine ci√≤ che vedevano.
+                        Non gli veniva dato alcun privilegio rispetto agli ebrei adulti, il che rendeva loro la vita molto pi˘ dura. » comunque anche grazie a loro se possiamo capire la situazione che si viveva allíinterno di quelle terribili baracche.
+                        ìQui risuonano grida e strilliî scrive un bambino nella poesia ìA Terezinî. 
+                        Egli racconta in questa poesia la sensazione di terrore che prova un bambino appena messo piede in un campo di concentramento, del sudiciume, della scomodit‡ dei letti e della scarsa igiene. 
+                        Tutte emozioni che si provavano in questi orrendi luoghi. Inoltre i bambini riuscivano in qualche modo a fare dei disegni catturando in una ìloroî immagine ciÚ che vedevano.
                     </i>
                 </p>
 
@@ -159,14 +159,14 @@
             <div class="w3-content w3-justify w3-text-grey w3-padding-32" id="sinfonia_della_morte">
                 <h2 class="w3-center">LA SINFONIA DELLA MORTE</h2>
                 <hr style="width:100%">
-                <p><i>Nei campi di concentramento la musica divenne il mezzo per trasmettere l‚Äôorrore e l‚Äôannullamento della dignit√† dei detenuti. 
+                <p><i>Nei campi di concentramento la musica divenne il mezzo per trasmettere líorrore e líannullamento della dignit‡ dei detenuti. 
                         Venivano spesso organizzate bande , formate dai prigionieri che suonassero, durante il giorno. 
-                        Queste bande venivano organizzate soprattutto durante le esecuzioni nelle quali il condannato veniva accompagnato col ‚ÄúTango della morte‚Äù.
+                        Queste bande venivano organizzate soprattutto durante le esecuzioni nelle quali il condannato veniva accompagnato col ìTango della morteî.
                         I brani erano composti dagli ebrei su ordine dei comandanti. 
                         I canti per sottolineare i vari momenti della vita nel campo e anche ninne nanne, che venivano cantate ai bambini condotti alle camere a gas. 
-                        Nella loro drammaticit√† questi sentimenti portarono alla luce numerosi capolavori musicali, che vennero composti proprio da quei musicisti. 
-                        Una di queste canzoni fu ‚ÄúGam Gam‚Äù, una canzone che riportava il quarto versetto del Salmo 23 e che veniva cantata dagli ebrei. 
-                        Essa divenne uno degli inni pi√π toccanti dell'Olocausto, cantato dalle scolaresche nel Giorno della Memoria per ricordare il milione e mezzo di bambini uccisi dai nazisti.
+                        Nella loro drammaticit‡ questi sentimenti portarono alla luce numerosi capolavori musicali, che vennero composti proprio da quei musicisti. 
+                        Una di queste canzoni fu ìGam Gamî, una canzone che riportava il quarto versetto del Salmo 23 e che veniva cantata dagli ebrei. 
+                        Essa divenne uno degli inni pi˘ toccanti dell'Olocausto, cantato dalle scolaresche nel Giorno della Memoria per ricordare il milione e mezzo di bambini uccisi dai nazisti.
                     </i>
                 </p>
                 <div class="w3-row-padding" style="margin:0 -16px">
@@ -186,11 +186,11 @@
             <div class="w3-content w3-justify w3-text-grey w3-padding-32" id="colpevole_indifferenza">
                 <h2 class="w3-center">COLPEVOLE INDIFFERENZA</h2>
                 <hr style="width:100%">
-                <p><i> ‚ÄúScriviamo nella pietra la parola INDIFFERENZA, perch√© l'indifferenza √® colpevolissima‚Äù. 
+                <p><i> ìScriviamo nella pietra la parola INDIFFERENZA, perchÈ l'indifferenza Ë colpevolissimaî. 
                         Queste le parole lasciate al Consiglio Regionale Ligure pochi anni fa nella Giornata della Memoria da Liliana Segre, la quale condanna l'indifferenza vedendola peggio della violenza. 
-                        Non a caso, come scritto nell'introduzione, dei lager se ne venne a conoscenza solo dopo la fine della guerra, ‚Äúperch√© se qualcosa non ti tocca personalmente, ‚Äúbeh ci penser√† qualcun altro‚Äù‚Äù.
+                        Non a caso, come scritto nell'introduzione, dei lager se ne venne a conoscenza solo dopo la fine della guerra, ìperchÈ se qualcosa non ti tocca personalmente, ìbeh ci penser‡ qualcun altroîî.
                         L'indifferenza della gente, quindi, ha permesso Auschwitz, ha permesso Terezin, ha permesso la Shoah
-                        Ha permesso il periodo pi√π cupo dell'intera storia dell'umanit√†.
+                        Ha permesso il periodo pi˘ cupo dell'intera storia dell'umanit‡.
 
                     </i>
 
@@ -214,7 +214,6 @@
                     <p><i class="fa fa-file-text fa-fw  w3-xlarge w3-margin-right"> </i> http://www.youtube.com/watch?v=fHGYq2L0-Zg&app=desktop</p>
             </div>
             </div> 
-        </div>
 
     </body>
 </html>
