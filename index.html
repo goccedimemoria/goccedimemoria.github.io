@@ -66,7 +66,7 @@
         </div>
 
         <!-- IMMAGINE NEVE -->
-        <div class="immagine" style="background-image: url(img/bck2.jpg)">
+        <div class="immagine" style="background-image: url(img/IMG_4144.jpg)">
         </div>
 
         <!-- TIMELINE -->
@@ -179,8 +179,77 @@
         <!-- IMMAGINE FINESTRA -->
         <div class="immagine" style="background-image: url(img/background.png)">
         </div>
+        
+        <!--                    CONCLUSIONI                 -->
+        <div class="w3-container w3-padding-32 w3-center" style="padding:10%">
+            <h1 class="w3-xxxlarge text-primary">CONCLUSIONI</h1>
+        </div>
 
-        <!-- MAPPA -->
+        <!-- SLIDESHOW -->
+        <div class="w3-display-container" style="width:100%;">
+            <img class="mySlides" src="img/IMG_4144.jpg" style="width:100%">
+            <img class="mySlides" src="img/bck2.jpg" style="width:100%">
+            <div class="w3-center w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+                <div class="w3-left w3-padding-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+                <div class="w3-right w3-padding-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+                <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+                <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+                <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+            </div>
+        </div>
+
+        <script>
+
+            var myIndex = 0;
+            carousel();
+
+            function carousel() {
+                var i;
+                var x = document.getElementsByClassName("mySlides");
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                myIndex++;
+                if (myIndex > x.length) {
+                    myIndex = 1
+                }
+                x[myIndex - 1].style.display = "block";
+                setTimeout(carousel, 3000); // Change image every 2 seconds
+            }
+
+            showDivs(myIndex);
+
+            function plusDivs(n) {
+                showDivs(myIndex += n);
+            }
+
+            function currentDiv(n) {
+                showDivs(myIndex = n);
+            }
+
+            function showDivs(n) {
+                var i;
+                var x = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("demo");
+                if (n > x.length) {
+                    myIndex = 1
+                }
+                if (n < 1) {
+                    myIndex = x.length
+                }
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" w3-white", "");
+                }
+                x[myIndex - 1].style.display = "block";
+                dots[myIndex - 1].className += " w3-white";
+            }
+        </script>
+
+
+        <!-- MAPPA
         <div class="w3-container" style="text-align:center">
             <img src="img/cartina_campi.png" class="mappa">
 
@@ -192,6 +261,6 @@
                     La differenza tra campi di sterminio e campi di concentramento
                 </p>
             </div>
-        </div>
+        </div>-->
     </body>
 </html>
