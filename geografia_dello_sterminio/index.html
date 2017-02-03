@@ -3,7 +3,7 @@
     <title>Geografia dello Sterminio</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="../css/w3.css">
+    <link rel="stylesheet" href="/css/w3.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
@@ -227,7 +227,7 @@
                         </p>
                     </div>
                 </div>
-                <video controls muted style="width: 100%">
+                <video muted style="width: 100%" id="video">
                     <source src="img/video_mauthausen.mp4" type="video/mp4">
                     Video non supportato.
                 </video>
@@ -367,5 +367,15 @@
             </div>
 
         </div>
+        
+        <script type="text/javascript" src="/js/jquery-3.1.1.min.js"></script>
+        <script type="text/javascript">
+            
+            $('#video').on('show', function() {
+                $('#video').get(0).play();
+            });
+            
+        </script>
+        
     </body>
 </html>
