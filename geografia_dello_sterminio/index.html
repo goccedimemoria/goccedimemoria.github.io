@@ -27,6 +27,20 @@
                 margin-left: 0;
             }
         }
+        #video_container{
+            position: relative;
+        }
+
+        #play_icon{
+            background: url('img/play.ico') center center no-repeat;
+            height: 128px;
+            left: 50%;
+            margin: -64px 0 0 -64px;
+            position: absolute;
+            top: 50%;
+            width: 128px;
+            z-index: 1; 
+        }
     </style>
     <body>
 
@@ -227,13 +241,13 @@
                         </p>
                     </div>
                 </div>
-                <video preload="auto" muted style="width: 100%; cursor: pointer;" id="video_mauthausen">
-                    <source src="img/video_mauthausen.mp4" type="video/mp4">
-                    <div class="w3-diplay-middle" id="play_icon">
-                        <img src="img/play.ico" width="50" height="50">
-                    </div>
-                    Video non supportato.
-                </video>
+                <div class="w3-container" id="video_container">
+                    <video preload="auto" muted style="width: 100%; cursor: pointer;" id="video_mauthausen">
+                        <source src="img/video_mauthausen.mp4" type="video/mp4">
+                        Video non supportato.
+                    </video>
+                    <div class="w3-diplay-middle" id="play_icon"> </div>
+                </div>
             </div>
 
             <!-- AUSCHWITZ-BIRKENAU -->
