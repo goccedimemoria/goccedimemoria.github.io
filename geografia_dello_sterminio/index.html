@@ -88,7 +88,7 @@
                 <h1 class="w3-jumbo">Geografia dello Sterminio</h1>
                 <div class="w3-content w3-justify w3-text-grey">
 
-                    <p class="w3-center" >
+                    <p class="w3-justify" >
                         Vi &egrave; una differenza, spesso trascurata, tra campi di concentramento e campi di sterminio, una differenza
                         che non &egrave; di grado, ma qualitativa. La morte avena infatti un ruolo ben diverso. Nel sistema dei campi di
                         concentramento la morte era un accidente previsto e, tuttavia, non programmato. Questo spiega perch&eacute; il
@@ -227,10 +227,12 @@
                         </p>
                     </div>
                 </div>
-                <video preload="auto" muted style="width: 100%; cursor: pointer;" id="video_mauthausen">
-                    <source src="img/video_mauthausen.mp4" type="video/mp4">
-                    Video non supportato.
-                </video>
+                <div class="w3-container" id="video_container">
+                    <video preload="auto" muted style="width: 100%; cursor: pointer;" id="video_mauthausen">
+                        <source src="img/video_mauthausen.mp4" type="video/mp4">
+                        Video non supportato.
+                    </video>
+                </div>
             </div>
 
             <!-- AUSCHWITZ-BIRKENAU -->
@@ -376,10 +378,12 @@
             $video.click(function() {
                 if (this.paused) {
                     this.play();
+                    $('#play_icon').style('display', 'none');
                     return false;
                 }
                 else {
                     this.pause();
+                    $('#play_icon').style('display', 'block');
                     return true;
                 }
             });
