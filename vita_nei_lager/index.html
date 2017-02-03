@@ -66,20 +66,20 @@
             </a>
         </nav>
 
-        <nav class="w3-top w3-black">
+        <nav class="w3-top w3-black" >
             <div class="container-fluid w3-hide-large w3-hide-medium">
                 <div class="navbar-header">
-                    <button type="button" class="navbar-toggle w3-left" data-toggle="collapse" data-target="#myNavbar">☰</button>
+                    <button type="button" class="w3-left" data-target="#myNavbar" onclick="w3_open()">☰</button>
                     <a class="navbar-brand " href="#" id="dropdown">Gocce di memoria</a>
                 </div>
                 <div class="collapse navbar-collapse" id="myNavbar">
                     <ul class="nav navbar-nav">
-                        <li><a href="#arrvio" id="dropdown">L'arrivo</a></li>
-                        <li><a href="#trattamento_estremo" id="dropdown">Trattamento estremo</a></li>
-                        <li><a href="#paura_della_morte" id="dropdown">Paura della selezione</a></li>
-                        <li><a href="#sinfonia_della_morte" id="dropdown">Sinfonia della morte</a></li>
-                        <li><a href="#colpevole_indifferenza" id="dropdown"> Colpevole indifferenza</a></li>
-                        <li><a href="#fonti" id="dropdown"> Fonti</a></li>
+                        <li><a href="#arrivo" id="dropdown" onclick="w3_close()">L'arrivo</a></li>
+                        <li><a href="#trattamento_estremo" id="dropdown" onclick="w3_close()">Trattamento estremo</a></li>
+                        <li><a href="#paura_della_selezione" id="dropdown" onclick="w3_close()">Paura della selezione</a></li>
+                        <li><a href="#sinfonia_della_morte" id="dropdown" onclick="w3_close()">Sinfonia della morte</a></li>
+                        <li><a href="#colpevole_indifferenza" id="dropdown" onclick="w3_close()"> Colpevole indifferenza</a></li>
+                        <li><a href="#fonti" id="dropdown" onclick="w3_close()"> Fonti</a></li>
                     </ul>
                 </div>
             </div>
@@ -164,24 +164,24 @@
                     <p><i>
                             <br>A Terezín<br><br>
 
-                        Quando arriva un nuovo bambino<br>
-                        tutto gli sembra strano.<br>
-                        Ma come, devo sdraiarmi per terra?<br>
-                        Mangiare patate nere? No! Non io!<br>
-                        Devo restare qui? Ma è sporco!<br>
-                        Il pavimento: guarda che sudiciume!<br>
-                        Ed io dovrei dormirci sopra?<br>
-                        Mi sporcherò tutto!<br>
-                        Qui, risuonano grida e strilli,<br>
-                        e poi, quante mosche…<br>
-                        Tutti sanno che le mosche portano malattia.<br>
-                        Oh, qualcosa mi morde! Non sarà una cimice?<br>
-                        Qui a Terezín, la vita è un inferno.<br>
-                        E quando tornerò a casa,<br>
-                        non lo so ancora dire.<br><br>
+                            Quando arriva un nuovo bambino<br>
+                            tutto gli sembra strano.<br>
+                            Ma come, devo sdraiarmi per terra?<br>
+                            Mangiare patate nere? No! Non io!<br>
+                            Devo restare qui? Ma è sporco!<br>
+                            Il pavimento: guarda che sudiciume!<br>
+                            Ed io dovrei dormirci sopra?<br>
+                            Mi sporcherò tutto!<br>
+                            Qui, risuonano grida e strilli,<br>
+                            e poi, quante mosche…<br>
+                            Tutti sanno che le mosche portano malattia.<br>
+                            Oh, qualcosa mi morde! Non sarà una cimice?<br>
+                            Qui a Terezín, la vita è un inferno.<br>
+                            E quando tornerò a casa,<br>
+                            non lo so ancora dire.<br><br>
 
-                        “Teddy” <br><br>
-                            </i></p>
+                            “Teddy” <br><br>
+                        </i></p>
                 </div>
                 <div class='w3-center'>
                     <iframe width="854" height="480" src="https://www.youtube.com/embed/emKGBpLzkwQ" frameborder="0" allowfullscreen></iframe>
@@ -235,7 +235,7 @@
             <div class='w3-center'>
                 <iframe width="854" height="480" src="https://www.youtube.com/embed/fHGYq2L0-Zg" frameborder="0" allowfullscreen></iframe>
             </div>
-            
+
             <!-- FONTI -->
             <div class="w3-padding-64 w3-content w3-text-grey" id="fonti">
                 <h2 class="w3-center">FONTI</h2>
@@ -244,15 +244,23 @@
                 <div class="w3-section">
                     <p><i class="fa fa-file-text fa-fw w3-xlarge w3-margin-right"></i> Primo Levi, I sommersi e i salvati, Torino, Einaudi, 1986</p>
                     <p><i class="fa fa-file-text fa-fw  w3-xlarge w3-margin-right"></i>www.lageredeportazione.org/testimonianze/pagina65.html</p>
-                    <p><i class="fa fa-file-text fa-fw  w3-xlarge w3-margin-right"> </i> Feltri, La torre e il pedone, pagina 267</p>
-                    <p><i class="fa fa-file-text fa-fw  w3-xlarge w3-margin-right"> </i> www.majorana.org/progetti/shoah/vita_nei_lager.htm</p>
-                    <p><i class="fa fa-file-text fa-fw  w3-xlarge w3-margin-right"> </i> www.igiornielenotti.it/?p=20812</p>
-                    <p><i class="fa fa-file-text fa-fw  w3-xlarge w3-margin-right"> </i>www.veronellazimella.it/images/stories/05_LA_MUSICA_NEI_CAMPI_DI_CONCENTRAMENTO.pdf</p>
-                    <p><i class="fa fa-file-text fa-fw  w3-xlarge w3-margin-right"> </i> it.wikipedia.org/wiki/Gam_Gam</p>
-                    <p><i class="fa fa-file-text fa-fw  w3-xlarge w3-margin-right"> </i> www.youtube.com/watch?v=fHGYq2L0-Zg&app=desktop</p>
+                    <p><i class="fa fa-file-text fa-fw  w3-xlarge w3-margin-right"></i> Feltri, La torre e il pedone, pagina 267</p>
+                    <p><i class="fa fa-file-text fa-fw  w3-xlarge w3-margin-right"></i> www.majorana.org/progetti/shoah/vita_nei_lager.htm</p>
+                    <p><i class="fa fa-file-text fa-fw  w3-xlarge w3-margin-right"></i> www.igiornielenotti.it/?p=20812</p>
+                    <p><i class="fa fa-file-text fa-fw  w3-xlarge w3-margin-right"></i>www.veronellazimella.it/images/stories/05_LA_MUSICA_NEI_CAMPI_DI_CONCENTRAMENTO.pdf</p>
+                    <p><i class="fa fa-file-text fa-fw  w3-xlarge w3-margin-right"></i> it.wikipedia.org/wiki/Gam_Gam</p>
+                    <p><i class="fa fa-file-text fa-fw  w3-xlarge w3-margin-right"></i> www.youtube.com/watch?v=fHGYq2L0-Zg&app=desktop</p>
                 </div>
             </div> 
         </div>
+        <script>
+            function w3_close() {
+                document.getElementById("myNavbar").style.display = "none";
+            }
+            function w3_open() {
+                document.getElementById("myNavbar").style.display = "block";
 
+            }
+        </script>
     </body>
 </html>
