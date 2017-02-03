@@ -41,7 +41,7 @@ app = {
     
     arg06: function() {
         $('#arg06').on('click', function() {
-            window.location = '/approccio_critico_alla_shoah/index.html';
+            window.location = '/ripensare_la_shoah/index.html';
         });
     }
     
