@@ -388,16 +388,16 @@
         <script type="text/javascript" src="/js/jquery-3.1.1.min.js"></script>
         <script type="text/javascript">
             
-            var $video = $("#play_icon");
+            var $video = $("#video_mauthausen");
 
-            $video.click(function() {
-                if (this.paused) {
-                    this.play();
+            $('#play_icon').click(function() {
+                if ($video.paused) {
+                    $video.play();
                     $('#play_icon').css('display', 'none');
                     return false;
                 }
                 else {
-                    this.pause();
+                    $video.pause();
                     $('#play_icon').css('display', 'block');
                     return true;
                 }
