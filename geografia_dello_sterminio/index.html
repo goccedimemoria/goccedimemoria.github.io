@@ -27,20 +27,6 @@
                 margin-left: 0;
             }
         }
-        #video_container{
-            position: relative;
-        }
-
-        #play_icon{
-            background: url('img/play.ico') center center no-repeat;
-            height: 128px;
-            left: 50%;
-            margin: -64px 0 0 -64px;
-            position: absolute;
-            top: 50%;
-            width: 128px;
-            z-index: 1; 
-        }
     </style>
     <body>
 
@@ -242,11 +228,10 @@
                     </div>
                 </div>
                 <div class="w3-container" id="video_container">
-                    <video preload="auto" muted style="width: 100%" id="video_mauthausen">
+                    <video preload="auto" muted style="width: 100%; cursor: pointer;" id="video_mauthausen">
                         <source src="img/video_mauthausen.mp4" type="video/mp4">
                         Video non supportato.
                     </video>
-                    <div class="w3-diplay-middle" id="play_icon" style="cursor: pointer"> </div>
                 </div>
             </div>
 
@@ -390,15 +375,15 @@
             
             var $video = $("#video_mauthausen");
 
-            $('#play_icon').click(function() {
-                if ($video.paused) {
-                    $video.play();
-                    $('#play_icon').css('display', 'none');
+            $video.click(function() {
+                if (this.paused) {
+                    this.play();
+                    $('#play_icon').style('display', 'none');
                     return false;
                 }
                 else {
-                    $video.pause();
-                    $('#play_icon').css('display', 'block');
+                    this.pause();
+                    $('#play_icon').style('display', 'block');
                     return true;
                 }
             });
