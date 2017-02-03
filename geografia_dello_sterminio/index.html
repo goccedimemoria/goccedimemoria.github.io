@@ -393,12 +393,12 @@
             $video.click(function() {
                 if (this.paused) {
                     this.play();
-                    $('#play_icon').style('display', 'none');
+                    $('#play_icon').css('display', 'none');
                     return false;
                 }
                 else {
                     this.pause();
-                    $('#play_icon').style('display', 'block');
+                    $('#play_icon').css('display', 'block');
                     return true;
                 }
             });
