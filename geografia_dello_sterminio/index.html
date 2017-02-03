@@ -227,8 +227,11 @@
                         </p>
                     </div>
                 </div>
-                <video muted style="width: 100%" id="video">
+                <video preload="auto" muted style="width: 100%; cursor: pointer;" id="video_mauthausen">
                     <source src="img/video_mauthausen.mp4" type="video/mp4">
+                    <div class="w3-diplay-middle" id="play_icon">
+                        <img src="img/play.ico" width="50" height="50">
+                    </div>
                     Video non supportato.
                 </video>
             </div>
@@ -371,9 +374,21 @@
         <script type="text/javascript" src="/js/jquery-3.1.1.min.js"></script>
         <script type="text/javascript">
             
-            $('#video').on('show', function() {
-                $('#video').play();
+            var $video = $("#video_mauthausen");
+
+            $video.click(function() {
+                if (this.paused) {
+                    this.play();
+                    $('#play_icon').style('display', 'none');
+                    return false;
+                }
+                else {
+                    this.pause();
+                    $('#play_icon').style('display', 'block');
+                    return true;
+                }
             });
+
             
         </script>
         
