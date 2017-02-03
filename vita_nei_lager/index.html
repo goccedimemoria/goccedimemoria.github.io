@@ -6,6 +6,9 @@
     <link rel="stylesheet" href="../css/w3.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <style>
         body, h1,h2,h3,h4,h5,h6 {
             font-family: "Montserrat", sans-serif;
@@ -27,56 +30,60 @@
                 margin-left: 0;
             }
         }
+        a{
+            color: black;
+        }
+        #dropdown{
+            color: white;
+        }
     </style>
     <body>
 
         <!-- Icon Bar (Sidenav - hidden on small screens) -->
-        <nav class="w3-sidenav w3-center w3-small w3-hide-small" >
-            <div class="w3-hide-medium w3-hide-large w3-opennav w3-right">
-                <span class="w3-opennav w3-top w3-padding-top w3-xxlarge w3-margin-right w3-text-grey w3-hover-text-black" style="width:auto;right:0;" onclick="openNav()"><i class="fa fa-bars"></i></span>
-            </div>
-            <a class="w3-padding-large w3-black w3-invert" href="/#argomenti">
+        <nav class="w3-sidenav w3-center w3-small w3-hide-small w3-hide-medium w3-animate-left w3-collapse w3-top" id="mySidenav"  style="z-index:3 ">
+            <a href="javascript:void(0)" onclick="w3_close()" class="w3-padding-xlarge w3-hide-large w3-display-topleft w3-hover-white" style="width:100%;font-size:22px">Close Menu</a>
+            <a class="w3-padding-large w3-black w3-invert" onclick="w3_close()" href="/#argomenti">
                 <i class="fa fa-arrow-left w3-xxlarge"></i>
                 <p>ARGOMENTI</p>
             </a>
-            <a class="w3-padding-large w3-hover-black" href="#arrivo">
-                <!-- <i class="fa fa-user w3-xxlarge"></i> -->
+            <a class="w3-padding-large w3-hover-black" onclick="w3_close()" href="#arrivo">                       
                 <p>L'ARRIVO</p>
             </a>
-            <a class="w3-padding-large w3-hover-black" href="#trattamento_estremo">
-                <!-- <i class="fa fa-eye w3-xxlarge"></i> -->
+            <a class="w3-padding-large w3-hover-black" onclick="w3_close()" href="#trattamento_estremo">                       
                 <p>TRATTAMENTO ESTREMO</p>
             </a>
-            <a class="w3-padding-large w3-hover-black" href="#paura_della_selezione">
-                <!-- <i class="fa fa-eye w3-xxlarge"></i> -->
+            <a class="w3-padding-large w3-hover-black" onclick="w3_close()" href="#paura_della_selezione">                       
                 <p>PAURA DELLA SELEZIONE</p>
             </a>
-            <a class="w3-padding-large w3-hover-black" href="#sinfonia_della_morte">
-                <!-- <i class="fa fa-user w3-xxlarge"></i> -->
+            <a class="w3-padding-large w3-hover-black" onclick="w3_close()" href="#sinfonia_della_morte">                     
                 <p>SINFONIA DELLA MORTE</p>
             </a>
-            <a class="w3-padding-large w3-hover-black" href="#colpevole_indifferenza">
-                <!-- <i class="fa fa-eye w3-xxlarge"></i> -->
+            <a class="w3-padding-large w3-hover-black" onclick="w3_close()" href="#colpevole_indifferenza">                     
                 <p>COLPEVOLE INDIFFERENZA</p>
             </a>
-            <a class="w3-padding-large w3-hover-black" href="#fonti">
-                <!-- <i class="fa fa-eye w3-xxlarge"></i> -->
+            <a class="w3-padding-large w3-hover-black" onclick="w3_close()" href="#fonti">                      
                 <p>FONTI</p>
             </a>
         </nav>
 
-        <!-- Navbar on small screens (Hidden on medium and large screens) -->
-        <div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
-            <ul class="w3-navbar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
-                <li class="w3-left" style="width:25% !important"><a href="/#argomenti">HOME</a></li>
-                <li class="w3-left" style="width:25% !important"><a href="#arrivo">L'ARRIVO</a></li>
-                <li class="w3-left" style="width:25% !important"><a href="#trattamento_estremo">TRATTAMENTO ESTREMO</a></li>
-                <li class="w3-left" style="width:25% !important"><a href="#paura_della_selezione">PAURA DELLA SELEZIONE</a></li>
-                <li class="w3-left" style="width:25% !important"><a href="#sinfonia_della_morte">SINFONIA DELLA MORTE</a></li>
-                <li class="w3-left" style="width:25% !important"><a href="#colpevole_indifferenza">COLPEVOLE INDIFFERENZA</a></li>
-                <li class="w3-left" style="width:25% !important"><a href="#fonti">FONTI</a></li>
-            </ul>
-        </div>
+        <nav class="w3-top w3-black">
+            <div class="container-fluid w3-hide-large w3-hide-medium">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">☰</button>
+                    <a class="navbar-brand" href="#" id="dropdown">Gocce di memoria</a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#arrvio" id="dropdown">L'arrivo</a></li>
+                        <li><a href="#trattamento_estremo" id="dropdown">Trattamento estremo</a></li>
+                        <li><a href="#paura_della_morte" id="dropdown">Paura della selezione</a></li>
+                        <li><a href="#sinfonia_della_morte" id="dropdown">Sinfonia della morte</a></li>
+                        <li><a href="#colpevole_indifferenza" id="dropdown"> Colpevole indifferenza</a></li>
+                        <li><a href="#fonti" id="dropdown"> Fonti</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
 
         <!-- ARGOMENTO 04 -->
 
@@ -210,13 +217,13 @@
 
                 <div class="w3-section">
                     <p><i class="fa fa-file-text fa-fw w3-xlarge w3-margin-right"></i> Primo Levi, I sommersi e i salvati, Torino, Einaudi, 1986</p>
-                    <p><i class="fa fa-file-text fa-fw  w3-xlarge w3-margin-right"></i>  http://www.lageredeportazione.org/testimonianze/pagina65.html</p>
+                    <p><i class="fa fa-file-text fa-fw  w3-xlarge w3-margin-right"></i> <a href="http://www.lageredeportazione.org/testimonianze/pagina65.html">LINK</a></p>
                     <p><i class="fa fa-file-text fa-fw  w3-xlarge w3-margin-right"> </i> Feltri, La torre e il pedone, pagina 267</p>
-                    <p><i class="fa fa-file-text fa-fw  w3-xlarge w3-margin-right"> </i> http://www.majorana.org/progetti/shoah/vita_nei_lager.htm</p>
-                    <p><i class="fa fa-file-text fa-fw  w3-xlarge w3-margin-right"> </i> http://www.igiornielenotti.it/?p=20812</p>
-                    <p><i class="fa fa-file-text fa-fw  w3-xlarge w3-margin-right"> </i> http://www.veronellazimella.it/images/stories/05_LA_MUSICA_NEI_CAMPI_DI_CONCENTRAMENTO.pdf</p>
-                    <p><i class="fa fa-file-text fa-fw  w3-xlarge w3-margin-right"> </i>  https://it.wikipedia.org/wiki/Gam_Gam</p>
-                    <p><i class="fa fa-file-text fa-fw  w3-xlarge w3-margin-right"> </i> http://www.youtube.com/watch?v=fHGYq2L0-Zg&app=desktop</p>
+                    <p><i class="fa fa-file-text fa-fw  w3-xlarge w3-margin-right"> </i> <a href="http://www.majorana.org/progetti/shoah/vita_nei_lager.htm">LINK</a></p>
+                    <p><i class="fa fa-file-text fa-fw  w3-xlarge w3-margin-right"> </i> <a href="http://www.igiornielenotti.it/?p=20812">LINK</a></p>
+                    <p><i class="fa fa-file-text fa-fw  w3-xlarge w3-margin-right"> </i> <a href="http://www.veronellazimella.it/images/stories/05_LA_MUSICA_NEI_CAMPI_DI_CONCENTRAMENTO.pdf">LINK</a></p>
+                    <p><i class="fa fa-file-text fa-fw  w3-xlarge w3-margin-right"> </i>  <a href="https://it.wikipedia.org/wiki/Gam_Gam">LINK</a></p>
+                    <p><i class="fa fa-file-text fa-fw  w3-xlarge w3-margin-right"> </i> <a href="http://www.youtube.com/watch?v=fHGYq2L0-Zg&app=desktop">LINK</a></p>
                 </div>
             </div> 
         </div>
