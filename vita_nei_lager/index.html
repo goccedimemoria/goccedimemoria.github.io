@@ -36,6 +36,22 @@
         #dropdown{
             color: white;
         }
+        .video {
+            height: 0;
+            overflow: hidden;
+            padding-bottom: 56.25%;
+            padding-top: 30px;
+            position: relative;
+        }
+        .video iframe,
+        .video object,
+        .video embed {
+            height: 100%;
+            left: 0;
+            position: absolute;
+            top: 0;
+            width: 100%;
+        }
     </style>
     <body>
 
@@ -183,7 +199,7 @@
                             “Teddy” <br><br>
                         </i></p>
                 </div>
-                <div class='w3-center'>
+                <div class='w3-center video'>
                     <iframe width="854" height="480" src="https://www.youtube.com/embed/emKGBpLzkwQ" frameborder="0" allowfullscreen></iframe>
                 </div>
 
@@ -229,7 +245,7 @@
                 </p>
             </div>
 
-            <div class='w3-center'>
+            <div class='w3-center video'>
                 <iframe width="854" height="480" src="https://www.youtube.com/embed/fHGYq2L0-Zg" frameborder="0" allowfullscreen></iframe>
             </div>
 
