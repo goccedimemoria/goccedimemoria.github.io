@@ -25,7 +25,46 @@
         <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type='text/css'>
 
     </head>
-    <body onscroll="app.isInView()">
+    <body onscroll="a()">
+        <script>
+            var a = function () {
+                function Utils() {
+
+                }
+
+                Utils.prototype = {
+                    constructor: Utils,
+                    isElementInView: function (element, fullyInView) {
+                        var pageTop = $(window).scrollTop();
+                        var pageBottom = pageTop + $(window).height();
+                        var elementTop = $(element).offset().top;
+                        var elementBottom = elementTop + $(element).height();
+
+                        if (fullyInView === true) {
+                            return ((pageTop < elementTop) && (pageBottom > elementBottom));
+                        } else {
+                            return ((elementTop <= pageBottom) && (elementBottom >= pageTop));
+                        }
+                    }
+                };
+
+                var Utils = new Utils();
+
+                var isElementInView = Utils.isElementInView($('#div-audio'), false);
+
+                var audio = document.getElementById("audio");
+
+                if (isElementInView) {
+                    //$('#audio').play();
+                    console.log("in");
+                    audio.play();
+                } else {
+                    audio.pause();
+                    console.log("out");
+
+                }
+            }
+        </script>
 
         <!-- HEADER -->
         <header class="w3-display w3-center w3-animate-opacity w3-text-white">

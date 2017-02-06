@@ -6,7 +6,7 @@ app = {
         this.arg04();
         this.arg05();
         this.arg06();
-        this.isInView();
+        //this.isInView();
     },
     arg01: function () {
         $('#arg01').on('click', function () {
