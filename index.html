@@ -61,7 +61,7 @@
                 andremo ad incontrare visitando il K.Z di Mauthausen e il suo Memoriale; abbiamo, infine, cercato
                 anche di lasciare un segno concreto della nostra presenza e partecipazione contro ogni forma di
                 discriminazione, di pregiudizio, di indifferenze e di oblio.<br></p>
-            
+
         </div>
 
         <!-- IMMAGINE NEVE -->
@@ -186,112 +186,112 @@
         </div>
 
         <!-- CONCLUSIONI -->
-        <div class="w3-container w3-padding-32 w3-center" style="padding:10%" id="div-audio">
-            <p class="introduzione text-muted">E' questo il mondo che abbiamo creato?<br>
-                L'abbiamo fatto noi stessi<br>
-                E' questo il mondo che abbiamo devastato fino all'osso?<br>
-                Se c'&egrave; in cielo un Dio che guarda gi&ugrave;<br>
-                cosa pu&ograve; pensare di ci&ograve; che abbiamo fatto<br>
-                al mondo che Lui ha creato?<br>
-            </p>
-            <audio id="audio" src="audio/is-this-the-world.mp3"></audio>
-        </div>
-
-        <!-- SLIDESHOW -->
-        <div class="w3-display-container" style="width:100%;">
-            <img class="mySlides" src="img/IMG_4144.jpg" style="width:100%">
-            <img class="mySlides" src="img/bck2.jpg" style="width:100%">
-            <div class="w3-center w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
-                <div class="w3-left w3-padding-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
-                <div class="w3-right w3-padding-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
-                <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
-                <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
-                <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+        <div>
+            <div class="w3-container w3-padding-32 w3-center" style="padding:10%" id="div-audio">
+                <p class="introduzione text-muted">E' questo il mondo che abbiamo creato?<br>
+                    L'abbiamo fatto noi stessi<br>
+                    E' questo il mondo che abbiamo devastato fino all'osso?<br>
+                    Se c'&egrave; in cielo un Dio che guarda gi&ugrave;<br>
+                    cosa pu&ograve; pensare di ci&ograve; che abbiamo fatto<br>
+                    al mondo che Lui ha creato?<br>
+                </p>
+                <audio id="audio" src="audio/is-this-the-world.mp3"></audio>
             </div>
-        </div>
 
-        <script>
+            <!-- SLIDESHOW -->
+            <div class="w3-display-container" style="width:100%;">
+                <img class="mySlides" src="img/IMG_4144.jpg" style="width:100%">
+                <img class="mySlides" src="img/bck2.jpg" style="width:100%">
+                <div class="w3-center w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+                    <div class="w3-left w3-padding-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+                    <div class="w3-right w3-padding-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+                    <!--span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+                    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span-->
+                </div>
+            </div>
 
-            var myIndex = 0;
-            carousel();
+            <script>
 
-            function carousel() {
-                var i;
-                var x = document.getElementsByClassName("mySlides");
-                for (i = 0; i < x.length; i++) {
-                    x[i].style.display = "none";
+                var myIndex = 0;
+                carousel();
+
+                function carousel() {
+                    var i;
+                    var x = document.getElementsByClassName("mySlides");
+                    for (i = 0; i < x.length; i++) {
+                        x[i].style.display = "none";
+                    }
+                    myIndex++;
+                    if (myIndex > x.length) {
+                        myIndex = 1
+                    }
+                    x[myIndex - 1].style.display = "block";
+                    setTimeout(carousel, 3000); // Change image every 2 seconds
                 }
-                myIndex++;
-                if (myIndex > x.length) {
-                    myIndex = 1
+
+                showDivs(myIndex);
+
+                function plusDivs(n) {
+                    showDivs(myIndex += n);
                 }
-                x[myIndex - 1].style.display = "block";
-                setTimeout(carousel, 3000); // Change image every 2 seconds
-            }
 
-            showDivs(myIndex);
-
-            function plusDivs(n) {
-                showDivs(myIndex += n);
-            }
-
-            function currentDiv(n) {
-                showDivs(myIndex = n);
-            }
-
-            function showDivs(n) {
-                var i;
-                var x = document.getElementsByClassName("mySlides");
-                var dots = document.getElementsByClassName("demo");
-                if (n > x.length) {
-                    myIndex = 1
+                function currentDiv(n) {
+                    showDivs(myIndex = n);
                 }
-                if (n < 1) {
-                    myIndex = x.length
+
+                function showDivs(n) {
+                    var i;
+                    var x = document.getElementsByClassName("mySlides");
+                    var dots = document.getElementsByClassName("demo");
+                    if (n > x.length) {
+                        myIndex = 1
+                    }
+                    if (n < 1) {
+                        myIndex = x.length
+                    }
+                    for (i = 0; i < x.length; i++) {
+                        x[i].style.display = "none";
+                    }
+                    for (i = 0; i < dots.length; i++) {
+                        dots[i].className = dots[i].className.replace(" w3-white", "");
+                    }
+                    x[myIndex - 1].style.display = "block";
+                    dots[myIndex - 1].className += " w3-white";
                 }
-                for (i = 0; i < x.length; i++) {
-                    x[i].style.display = "none";
-                }
-                for (i = 0; i < dots.length; i++) {
-                    dots[i].className = dots[i].className.replace(" w3-white", "");
-                }
-                x[myIndex - 1].style.display = "block";
-                dots[myIndex - 1].className += " w3-white";
-            }
-        </script>
+            </script>
 
-        <div class="w3-container w3-padding-32 w3-center w3-light-grey" style="padding:10%">
-            <br><br>
-            <p class="w3-center text-muted introduzione">
-                Siamo quindi giunti alla foce del fiume, dove dovremmo approntare delle riflessioni finali su questo nostro percorso. <br>
-                Difficile trovare parole per definire una vicenda storica, sociale, politica, esistenziale difronte alla quale i nostri 
-                sentimenti oscillano tra lo sgomento e l’attonito, tra l’incredulità e l’indignazione. <br>
-                Come segno di partecipazione e di consapevolezza, in queste pagine abbiamo raccolto piccole gocce di memoria, frammenti 
-                di vite travolte e spezzate a cui abbiamo cercato di restituire compostezza e Memoria rendendole parte della nostra 
-                esperienza didattica e umana.<br>
-            </p>
-            <p class="introduzione text-muted" style='text-align: left;'>
-                27 gennaio 2017
-            </p>
-            <p class="introduzione text-muted" style='text-align: right;'>
-                La classe 5AI a. s. 2016-17<br>
-                ITIS Marconi di Verona
-            </p>
-        </div>
-
-
-        <!-- MAPPA
-        <div class="w3-container" style="text-align:center">
-            <img src="img/cartina_campi.png" class="mappa">
-
-            <div>
-
+            <div class="w3-container w3-padding-32 w3-center w3-light-grey" style="padding:10%">
                 <br><br>
-                <h4>Campi di sterminio e campi di concentramento</h4>
-                <p class="introduzione text-muted">
-                    La differenza tra campi di sterminio e campi di concentramento
+                <p class="w3-center text-muted introduzione">
+                    Siamo quindi giunti alla foce del fiume, dove dovremmo approntare delle riflessioni finali su questo nostro percorso. <br>
+                    Difficile trovare parole per definire una vicenda storica, sociale, politica, esistenziale difronte alla quale i nostri 
+                    sentimenti oscillano tra lo sgomento e l’attonito, tra l’incredulità e l’indignazione. <br>
+                    Come segno di partecipazione e di consapevolezza, in queste pagine abbiamo raccolto piccole gocce di memoria, frammenti 
+                    di vite travolte e spezzate a cui abbiamo cercato di restituire compostezza e Memoria rendendole parte della nostra 
+                    esperienza didattica e umana.<br>
+                </p>
+                <p class="introduzione text-muted" style='text-align: left;'>
+                    27 gennaio 2017
+                </p>
+                <p class="introduzione text-muted" style='text-align: right;'>
+                    La classe 5AI a. s. 2016-17<br>
+                    ITIS Marconi di Verona
                 </p>
             </div>
-        </div>-->
+
+
+            <!-- MAPPA
+            <div class="w3-container" style="text-align:center">
+                <img src="img/cartina_campi.png" class="mappa">
+    
+                <div>
+    
+                    <br><br>
+                    <h4>Campi di sterminio e campi di concentramento</h4>
+                    <p class="introduzione text-muted">
+                        La differenza tra campi di sterminio e campi di concentramento
+                    </p>
+                </div>
+            </div>-->
     </body>
 </html>
