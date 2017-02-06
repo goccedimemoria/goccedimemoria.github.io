@@ -67,9 +67,12 @@ app = {
 
         if (isElementInView) {
             //$('#audio').play();
+            console.log("in");
             audio.play();
         } else {
             audio.pause();
+            console.log("out");
+
         }
     }
 
