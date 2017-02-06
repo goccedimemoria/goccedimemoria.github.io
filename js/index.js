@@ -6,7 +6,6 @@ app = {
         this.arg04();
         this.arg05();
         this.arg06();
-        //this.isInView();
     },
     arg01: function () {
         $('#arg01').on('click', function () {
@@ -37,43 +36,6 @@ app = {
         $('#arg06').on('click', function () {
             window.location = '/ripensare_la_shoah/';
         });
-    },
-    isInView: function () {
-        function Utils() {
-
-        }
-
-        Utils.prototype = {
-            constructor: Utils,
-            isElementInView: function (element, fullyInView) {
-                var pageTop = $(window).scrollTop();
-                var pageBottom = pageTop + $(window).height();
-                var elementTop = $(element).offset().top;
-                var elementBottom = elementTop + $(element).height();
-
-                if (fullyInView === true) {
-                    return ((pageTop < elementTop) && (pageBottom > elementBottom));
-                } else {
-                    return ((elementTop <= pageBottom) && (elementBottom >= pageTop));
-                }
-            }
-        };
-
-        var Utils = new Utils();
-
-        var isElementInView = Utils.isElementInView($('#div-audio'), false);
-
-        var audio = document.getElementById("audio");
-
-        if (isElementInView) {
-            //$('#audio').play();
-            console.log("in");
-            audio.play();
-        } else {
-            audio.pause();
-            console.log("out");
-
-        }
     }
 
 

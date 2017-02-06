@@ -25,9 +25,9 @@
         <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type='text/css'>
 
     </head>
-    <body onscroll="b()">
+    <body onscroll="isInView()">
         <script>
-            var b = function () {
+            var isInView = function () {
                 function Utils() {
 
                 }
@@ -55,13 +55,9 @@
                 var audio = document.getElementById("audio");
 
                 if (isElementInView) {
-                    //$('#audio').play();
-                    console.log("in");
                     audio.play();
                 } else {
                     audio.pause();
-                    console.log("out");
-
                 }
             }
         </script>
