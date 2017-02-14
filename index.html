@@ -67,7 +67,7 @@
             <div class="w3-display-middle">
                 <h1 class="w3-jumbo titolo">Gocce di Memoria</h1>
                 <div class="subtitle"><br><b>
-                    “ La ragazza fantasticava di un prato... Hai mai guardato un prato con gli occhi di una prigioniera del K.Z.?“
+                        “ La ragazza fantasticava di un prato... Hai mai guardato un prato con gli occhi di una prigioniera del K.Z.?“
                     </b></div>
             </div>
         </header>
@@ -260,88 +260,74 @@
             </div>
         </div>
 
-            <script>
+        <script>
 
-                var myIndex = 0;
-                carousel();
+            var myIndex = 0;
+            carousel();
 
-                function carousel() {
-                    var i;
-                    var x = document.getElementsByClassName("mySlides");
-                    for (i = 0; i < x.length; i++) {
-                        x[i].style.display = "none";
-                    }
-                    myIndex++;
-                    if (myIndex > x.length) {
-                        myIndex = 1
-                    }
-                    x[myIndex - 1].style.display = "block";
-                    setTimeout(carousel, 7647); // Change image every 7.64 seconds -> 17 images
+            function carousel() {
+                var i;
+                var x = document.getElementsByClassName("mySlides");
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
                 }
-
-                showDivs(myIndex);
-
-                function plusDivs(n) {
-                    showDivs(myIndex += n);
+                myIndex++;
+                if (myIndex > x.length) {
+                    myIndex = 1
                 }
+                x[myIndex - 1].style.display = "block";
+                setTimeout(carousel, 7647); // Change image every 7.64 seconds -> 17 images
+            }
 
-                function currentDiv(n) {
-                    showDivs(myIndex = n);
+            showDivs(myIndex);
+
+            function plusDivs(n) {
+                showDivs(myIndex += n);
+            }
+
+            function currentDiv(n) {
+                showDivs(myIndex = n);
+            }
+
+            function showDivs(n) {
+                var i;
+                var x = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("demo");
+                if (n > x.length) {
+                    myIndex = 1
                 }
-
-                function showDivs(n) {
-                    var i;
-                    var x = document.getElementsByClassName("mySlides");
-                    var dots = document.getElementsByClassName("demo");
-                    if (n > x.length) {
-                        myIndex = 1
-                    }
-                    if (n < 1) {
-                        myIndex = x.length
-                    }
-                    for (i = 0; i < x.length; i++) {
-                        x[i].style.display = "none";
-                    }
-                    for (i = 0; i < dots.length; i++) {
-                        dots[i].className = dots[i].className.replace(" w3-white", "");
-                    }
-                    x[myIndex - 1].style.display = "block";
-                    dots[myIndex - 1].className += " w3-white";
+                if (n < 1) {
+                    myIndex = x.length
                 }
-            </script>
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" w3-white", "");
+                }
+                x[myIndex - 1].style.display = "block";
+                dots[myIndex - 1].className += " w3-white";
+            }
+        </script>
 
-            <div class="w3-container w3-padding-32 w3-center w3-light-grey" style="padding:10%">
-                <br><br>
-                <p class="w3-center text-muted introduzione">
-                    Siamo quindi giunti alla foce del fiume, dove dovremmo approntare delle riflessioni finali su questo nostro percorso. <br>
-                    Difficile trovare parole per definire una vicenda storica, sociale, politica, esistenziale difronte alla quale i nostri 
-                    sentimenti oscillano tra lo sgomento e l’attonito, tra l’incredulità e l’indignazione. <br>
-                    Come segno di partecipazione e di consapevolezza, in queste pagine abbiamo raccolto piccole gocce di memoria, frammenti 
-                    di vite travolte e spezzate a cui abbiamo cercato di restituire compostezza e Memoria rendendole parte della nostra 
-                    esperienza didattica e umana.<br>
-                </p>
-                <p class="introduzione text-muted" style='text-align: left;'>
-                    27 gennaio 2017
-                </p>
-                <p class="introduzione text-muted" style='text-align: right;'>
-                    La classe 5AI a. s. 2016-17<br>
-                    ITIS Marconi di Verona
-                </p>
-            </div>
+        <div class="w3-container w3-padding-32 w3-center w3-light-grey" style="padding:10%">
+            <br><br>
+            <p class="w3-center text-muted introduzione">
+                Siamo quindi giunti alla foce del fiume, dove dovremmo approntare delle riflessioni finali su questo nostro percorso. <br>
+                Difficile trovare parole per definire una vicenda storica, sociale, politica, esistenziale difronte alla quale i nostri 
+                sentimenti oscillano tra lo sgomento e l’attonito, tra l’incredulità e l’indignazione. <br>
+                Come segno di partecipazione e di consapevolezza, in queste pagine abbiamo raccolto piccole gocce di memoria, frammenti 
+                di vite travolte e spezzate a cui abbiamo cercato di restituire compostezza e Memoria rendendole parte della nostra 
+                esperienza didattica e umana.<br>
+            </p>
+            <p class="introduzione text-muted" style='text-align: left;'>
+                27 gennaio 2017
+            </p>
+            <p class="introduzione text-muted" style='text-align: right;'>
+                La classe 5AI a. s. 2016-17<br>
+                ITIS Marconi di Verona
+            </p>
+        </div>
 
-
-            <!-- MAPPA
-            <div class="w3-container" style="text-align:center">
-                <img src="img/cartina_campi.png" class="mappa">
-    
-                <div>
-    
-                    <br><br>
-                    <h4>Campi di sterminio e campi di concentramento</h4>
-                    <p class="introduzione text-muted">
-                        La differenza tra campi di sterminio e campi di concentramento
-                    </p>
-                </div>
-            </div>-->
     </body>
 </html>
