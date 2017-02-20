@@ -61,7 +61,7 @@ header {
 }
 
 p {
-    font-family: ;
+    /*font-family: ;*/
     font-size: 14px;
     line-height: 1.75;
 }
@@ -107,7 +107,6 @@ a.active {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-
 }
 
 .bottone{
@@ -154,3 +153,18 @@ em {
 a{
     font-color : black;
 }
+/*
+@keyframes fa-blink {
+     0% { opacity: 1; }
+     25% { opacity: 0.25; }
+     50% { opacity: 0.5; }
+     75% { opacity: 0.75; }
+     100% { opacity: 0; }
+ }
+.fa-blink {
+   -webkit-animation: fa-blink .5000000s linear infinite;
+   -moz-animation: fa-blink .5000000s linear infinite;
+   -ms-animation: fa-blink .5000000s linear infinite;
+   -o-animation: fa-blink .5000000s linear infinite;
+   animation: fa-blink .5000000s linear infinite;
+}*/
