@@ -17,6 +17,8 @@
         <link rel="stylesheet" type="text/css" href="css/index.css">
         <link rel="stylesheet" type="text/css" href="css/timelineCss.css">
         <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+        
 
         <!-- FONTS -->
         <!--<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bitter">
@@ -53,16 +55,21 @@
 
                 var Utils = new Utils();
 
+                //audio
                 var isElementInView = Utils.isElementInView($('#div-audio'), false);
-
                 var audio = document.getElementById("audio");
-
                 if (isElementInView) {
                     audio.play();
-
                 } else {
                     audio.pause();
                 }
+                
+                //slideshow
+                var isSlideshowInView = Utils.isElementInView($('#slideshow'), false);
+                if(isSlideshowInView){
+                    
+                }
+                
             }
         </script>
 
@@ -73,6 +80,11 @@
                 <div class="subtitle"><br><b>
                         “ La ragazza fantasticava di un prato... Hai mai guardato un prato con gli occhi di una prigioniera del K.Z.? “
                     </b></div>
+            </div>
+            <div class="w3-display-bottommiddle">
+                <p style="font-size: 17px;">Scroll down</p>
+                <i class="fa fa-angle-down fa-6" aria-hidden="true" style="font-size: 5em;"></i>
+                <br><br>
             </div>
         </header>
 
@@ -99,7 +111,6 @@
                 andremo ad incontrare visitando il K.Z di Mauthausen e il suo Memoriale; abbiamo, infine, cercato
                 anche di lasciare un segno concreto della nostra presenza e partecipazione contro ogni forma di
                 discriminazione, di pregiudizio, di indifferenze e di oblio.<br></p>
-
         </div>
 
         <!-- IMMAGINE NEVE -->
@@ -237,7 +248,7 @@
             </div>
 
             <!-- SLIDESHOW -->
-            <div class="w3-section w3-content">
+            <div class="w3-section w3-content" id="slideshow">
                 <img class="mySlides w3-animate-fading" src="slideshow/1.jpg" style="width:100%; height: 100%">
                 <img class="mySlides w3-animate-fading" src="slideshow/2.jpg" style="width:100%; height: 100%">
                 <img class="mySlides w3-animate-fading" src="slideshow/3.jpg" style="width:100%; height: 100%">
