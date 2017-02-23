@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 
-var isAgainInViewport = true;
+var isAgainInViewport = false;
 var isInView = function () {
     function Utils() {
     }
@@ -30,10 +30,11 @@ var isInView = function () {
     //audio
     var isElementInView = Utils.isElementInView($('#div-audio'), false);
     var audio = document.getElementById("audio");
-    if (isElementInView && !isAgainInViewport) {
+    if (isElementInView && isAgainInViewport == false) {
+        isAgainInViewport = true;
         audio.play();
         myIndex = 0;
-    } else if (isElementInView && isAgainInViewport) {
+    } else if (isElementInView && isAgainInViewport == true) {
         audio.play();
     } else if (!isElementInView) {
         isAgainInViewport = false;
