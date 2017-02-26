@@ -18,7 +18,7 @@ h1, h2, h3 {
 }
 
 header {
-    background-image: url(../img/fiore.jpg);
+    background-image: url(../img/fiore-min.jpg);
     background-position: top center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -116,7 +116,7 @@ a.active {
 
 }
 em {
-    background-image: url(../img/bck2.jpg);
+    background-image: url(../img/bck2-min.jpg);
     background-size: cover;
 }
 
