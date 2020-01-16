@@ -1,1 +1,9 @@
-#robots.txt
+# Group 1
+User-agent: Googlebot
+Disallow: /
+
+# Group 2
+User-agent: *
+Allow: /
+
+Sitemap: https://www.goccedimemoria.github.io/sitemap.xml
